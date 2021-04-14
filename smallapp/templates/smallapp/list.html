@@ -2,5 +2,13 @@
 
 <form>
 
-    <input type="text" name="search">
+    <input type="submit" name="list">
 </form>
+
+{% for list in lists %}
+
+    <div>
+        <p>{{list}}</p>
+    </div>
+
+{% endfor %}
